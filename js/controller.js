@@ -23,10 +23,11 @@ const controller = (function () {
       viewController.drawNewListItem(newListItem, inputValues.type);
       updateBudget();
       updateExpensesPercents();
+      viewController.clearFormInputFields();
     }
     
     // Источник mock-данных с автоподстановкой в поля формы
-    randomizeTestData.putRandomValues();
+    // randomizeTestData.putRandomValues();
   }
 
   // Обработка клика на кнопке удаления пункта
